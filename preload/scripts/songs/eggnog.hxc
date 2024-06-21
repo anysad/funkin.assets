@@ -23,7 +23,8 @@ import funkin.save.Save;
 
 class EggnogSong extends Song
 {
-	var hasPlayedCutscene:Bool = false;
+	var hasPlayedErectCutscene:Bool = false;
+	var hasPlayedEndCutscene:Bool = false;
 
   //var santaDead:ScriptedFlxAtlasSprite;
 
@@ -31,7 +32,8 @@ class EggnogSong extends Song
 	{
 		super('eggnog');
 
-		hasPlayedCutscene = false;
+		hasPlayedErectCutscene = false;
+		hasPlayedEndCutscene = false;
 	}
 
 	public override function isSongNew(currentDifficulty:String):Bool{
@@ -55,24 +57,53 @@ class EggnogSong extends Song
 
 	public override function onSongEnd(event:CountdownScriptEvent):Void {
 		super.onSongEnd(event);
-   	if (PlayState.instance.currentVariation != 'erect') hasPlayedCutscene = true;
+
+		if (!PlayStatePlaylist.isStoryMode){
+      hasPlayedEndCutscene = true;
+    }
+
+		if(!hasPlayedEndCutscene)
+    {
+      hasPlayedEndCutscene = true;
+
+			event.cancel();
+
+			startEndCutscene();
+		} else {
+			hasPlayedEndCutscene = false;
+		}
+
+   	if (PlayState.instance.currentVariation != 'erect') hasPlayedErectCutscene = true;
 		// only play this on erect..
 
-    if (!hasPlayedCutscene) {
-      hasPlayedCutscene = true;
+    if (!hasPlayedErectCutscene) {
+      hasPlayedErectCutscene = true;
 
       event.cancel();
 
 			// start the video cutscene and hide it so the other stuff can happen after
-      startCutscene();
+      startErectCutscene();
     } else {
 			// Make sure the cutscene can play again next time!
-			hasPlayedCutscene = false;
+			hasPlayedErectCutscene = false;
 			// DO NOT CANCEL THE EVENT!
 		}
 	}
 
-	function startCutscene(){
+	function startEndCutscene() {
+		var blackBG:FunkinSprite = new FunkinSprite(-FlxG.width * FlxG.camera.zoom, -FlxG.height * FlxG.camera.zoom);
+    blackBG.makeSolidColor(FlxG.width * 3, FlxG.height * 3, 0xFF000000);
+    blackBG.scrollFactor.set();
+    PlayState.instance.add(blackBG);
+    PlayState.instance.camHUD.visible = false;
+    PlayState.instance.isInCutscene = true;
+
+    FunkinSound.playOnce(Paths.sound('Lights_Shut_off'), 1, function () {
+			PlayState.instance.endSong(true);
+		});
+	}
+
+	function startErectCutscene(){
 
     var normalSanta = PlayState.instance.currentStage.getNamedProp('santa');
     normalSanta.visible = false;
@@ -103,7 +134,7 @@ class EggnogSong extends Song
 		//FlxTween.tween(PlayState.instance.camHUD, {alpha: 0}, 1);
 
 		PlayState.instance.isInCutscene = true;
-		hasPlayedCutscene = true;
+		hasPlayedErectCutscene = true;
 
 		PlayState.instance.currentStage.getBoyfriend().danceEvery = 0;
 		PlayState.instance.currentStage.getDad().danceEvery = 0;
@@ -162,6 +193,7 @@ class EggnogSong extends Song
   {
     super.onCreate(event);
 
-    hasPlayedCutscene = false;
+		hasPlayedEndCutscene = false;
+    hasPlayedErectCutscene = false;
   }
 }
