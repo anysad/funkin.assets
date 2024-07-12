@@ -83,7 +83,7 @@ class TankmanBattlefieldStage extends Stage
 		clouds.velocity.x = FlxG.random.float(5, 15);
 	}
 
-	function onPostGameOver(event:PostGameOverScriptEvent)
+	function onGameOverLoop(event:GameOverLoopScriptEvent)
   {
     event.musicVolume = 0.2;
 
@@ -93,7 +93,7 @@ class TankmanBattlefieldStage extends Stage
       playJeffQuote();
     }
 
-		super.onPostGameOver(event);
+		super.onGameOverLoop(event);
   }
 
 	function playJeffQuote():Void
