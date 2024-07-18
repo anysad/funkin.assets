@@ -5,7 +5,7 @@
   "flipX": true,
   "freeplayIcon": {
     "name": "picopixel",
-    "offsets": [103, 15]
+    "offsets": [103, 13]
   },
   "animations": [
     {
