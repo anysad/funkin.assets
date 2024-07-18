@@ -6,6 +6,10 @@
   "healthIcon": {
     "id": "bf"
   },
+  "freeplayIcon": {
+    "name": "bfpixel",
+    "flipX": true
+  },
   "renderType": "multisparrow",
   "singTime": 8.0,
   "animations": [

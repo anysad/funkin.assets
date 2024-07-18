@@ -7,6 +7,10 @@
   "singTime": 8.0,
   "offsets": [200, -550],
   "cameraOffsets": [200, 500],
+  "freeplayIcon": {
+    "name": "tankmanpixel",
+    "offsets": [90, 5]
+  },
   "animations": [
     {
       "name": "idle",

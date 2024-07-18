@@ -5,6 +5,10 @@
   "assetPath": "characters/BOYFRIEND",
   "flipX": true,
   "singTime": 8.0,
+  "freeplayIcon": {
+    "name": "bfpixel",
+    "flipX": true
+  },
   "animations": [
     {
       "name": "idle",

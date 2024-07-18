@@ -5,6 +5,10 @@
   "healthIcon": {
     "id": "pico"
   },
+  "freeplayIcon": {
+    "name": "picopixel",
+    "offsets": [103, 15]
+  },
   "flipX": true,
   "renderType": "animateatlas",
   "singTime": 999.0,

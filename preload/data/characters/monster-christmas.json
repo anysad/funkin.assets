@@ -5,6 +5,10 @@
   "healthIcon": {
     "id": "monster"
   },
+  "freeplayIcon": {
+    "name": "monsterpixel",
+    "offsets": [100, 10]
+  },
   "animations": [
     {
       "name": "idle",

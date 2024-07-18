@@ -4,6 +4,10 @@
   "assetPath": "characters/SpookyKids",
   "singTime": 8.0,
   "startingAnimation": "danceRight",
+  "freeplayIcon": {
+    "name": "spookypixel",
+    "offsets": [105, 18]
+  },
   "animations": [
     {
       "name": "danceLeft",

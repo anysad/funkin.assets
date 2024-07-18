@@ -9,6 +9,10 @@
     "id": "senpai",
     "isPixel": true
   },
+  "freeplayIcon": {
+    "name": "senpaipixel",
+    "offsets": [95, 11]
+  },
   "animations": [
     {
       "name": "idle",

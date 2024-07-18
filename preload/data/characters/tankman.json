@@ -18,6 +18,10 @@
     "isPixel": false,
     "scale": 1
   },
+  "freeplayIcon": {
+    "name": "tankmanpixel",
+    "offsets": [90, 5]
+  },
   "animations": [
     {
       "flipY": false,
@@ -37,7 +41,7 @@
     },
     {
       "flipY": false,
-      "offsets": [63,-105],
+      "offsets": [63, -105],
       "frameRate": 24,
       "prefix": "Tankman DOWN note instance 1",
       "flipX": false,
@@ -45,7 +49,7 @@
     },
     {
       "flipY": false,
-      "offsets": [48,54],
+      "offsets": [48, 54],
       "frameRate": 24,
       "prefix": "Tankman UP note instance 1",
       "flipX": false,
@@ -53,7 +57,7 @@
     },
     {
       "flipY": false,
-      "offsets": [-22,-28],
+      "offsets": [-22, -28],
       "frameRate": 24,
       "prefix": "Tankman Note Left instance 1",
       "flipX": false,

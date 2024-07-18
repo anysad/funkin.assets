@@ -4,6 +4,10 @@
   "assetPath": "characters/GF_assets",
   "startingAnimation": "danceRight",
   "singTime": 8.0,
+  "freeplayIcon": {
+    "name": "gfpixel",
+    "offsets": [110, 25]
+  },
   "animations": [
     {
       "name": "danceLeft",

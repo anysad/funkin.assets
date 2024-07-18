@@ -5,6 +5,10 @@
   "healthIcon": {
     "id": "darnell"
   },
+  "freeplayIcon": {
+    "name": "darnellpixel",
+    "offsets": [100, 10]
+  },
   "renderType": "animateatlas",
   "singTime": 999.0,
   "animations": [

@@ -10,6 +10,10 @@
     "id": "bf-pixel",
     "isPixel": true
   },
+  "freeplayIcon": {
+    "name": "bfpixel",
+    "flipX": true
+  },
   "death": {
     "cameraOffsets": [200, 200]
   },

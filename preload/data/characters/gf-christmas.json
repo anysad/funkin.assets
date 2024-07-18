@@ -3,6 +3,10 @@
   "name": "Girlfriend (Christmas)",
   "assetPath": "characters/gfChristmas",
   "startingAnimation": "danceLeft",
+  "freeplayIcon": {
+    "name": "gfpixel",
+    "offsets": [110, 25]
+  },
   "animations": [
     {
       "name": "danceLeft",

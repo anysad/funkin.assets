@@ -4,6 +4,10 @@
   "assetPath": "characters/darnell",
   "singTime": 8.0,
   "offsets": [20, 100],
+  "freeplayIcon": {
+    "name": "darnellpixel",
+    "offsets": [100, 10]
+  },
   "animations": [
     {
       "name": "idle",

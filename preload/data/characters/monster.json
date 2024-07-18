@@ -2,6 +2,10 @@
   "version": "1.0.0",
   "name": "Monster",
   "assetPath": "characters/Monster_Assets",
+  "freeplayIcon": {
+    "name": "monsterpixel",
+    "offsets": [100, 10]
+  },
   "animations": [
     {
       "name": "idle",

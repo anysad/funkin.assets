@@ -6,6 +6,10 @@
   "renderType": "packer",
   "isPixel": true,
   "scale": 6,
+  "freeplayIcon": {
+    "name": "spiritpixel",
+    "offsets": [100, 20]
+  },
   "animations": [
     {
       "name": "idle",

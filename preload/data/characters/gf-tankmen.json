@@ -3,6 +3,10 @@
   "name": "Girlfriend (Tankman Stickup)",
   "assetPath": "characters/gfTankmen",
   "startingAnimation": "danceLeft",
+  "freeplayIcon": {
+    "name": "gfpixel",
+    "offsets": [110, 25]
+  },
   "animations": [
     {
       "name": "danceLeft",

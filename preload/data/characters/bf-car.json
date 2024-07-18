@@ -8,6 +8,10 @@
   "healthIcon": {
     "id": "bf"
   },
+  "freeplayIcon": {
+    "name": "bfpixel",
+    "flipX": true
+  },
   "animations": [
     {
       "name": "idle",

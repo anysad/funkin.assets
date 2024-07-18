@@ -6,6 +6,10 @@
     "id": "pico",
     "flipX": false
   },
+  "freeplayIcon": {
+    "name": "picopixel",
+    "offsets": [103, 15]
+  },
   "death": {
     "cameraOffsets": [10, -40],
     "cameraZoom": 1.0
