@@ -7,12 +7,10 @@
   "singTime": 8.0,
   "isPixel": true,
   "healthIcon": {
-    "id": "bf-pixel",
-    "isPixel": true
+    "id": "bf-pixel"
   },
   "freeplayIcon": {
     "name": "bfpixel",
-    "flipX": true
   },
   "death": {
     "cameraOffsets": [200, 200]

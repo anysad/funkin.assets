@@ -9,8 +9,7 @@
     "id": "bf"
   },
   "freeplayIcon": {
-    "name": "bfpixel",
-    "flipX": true
+    "name": "bfpixel"
   },
   "animations": [
     {
