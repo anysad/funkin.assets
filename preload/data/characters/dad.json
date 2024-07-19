@@ -5,7 +5,7 @@
   "singTime": 8.0,
   "freeplayIcon": {
     "name": "daddypixel",
-    "offsets": [100, 20]
+    "offsets": [0, -5]
   },
   "animations": [
     {

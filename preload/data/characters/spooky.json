@@ -6,7 +6,7 @@
   "startingAnimation": "danceRight",
   "freeplayIcon": {
     "name": "spookypixel",
-    "offsets": [105, 18]
+    "offsets": [5, -7]
   },
   "animations": [
     {

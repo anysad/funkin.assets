@@ -8,7 +8,7 @@
   },
   "freeplayIcon": {
     "name": "picopixel",
-    "offsets": [103, 13]
+    "offsets": [3, -12]
   },
   "death": {
     "cameraOffsets": [10, -40],

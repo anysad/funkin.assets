@@ -4,7 +4,7 @@
   "assetPath": "characters/mom_dad_christmas_assets",
   "freeplayIcon": {
     "name": "parents-christmaspixel",
-    "offsets": [150, 25]
+    "offsets": [50]
   },
   "animations": [
     {

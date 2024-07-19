@@ -7,7 +7,7 @@
   },
   "freeplayIcon": {
     "name": "darnellpixel",
-    "offsets": [100, 10]
+    "offsets": [0, -15]
   },
   "renderType": "animateatlas",
   "singTime": 999.0,

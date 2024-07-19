@@ -20,7 +20,7 @@
   },
   "freeplayIcon": {
     "name": "tankmanpixel",
-    "offsets": [90, 5]
+    "offsets": [-10, -20]
   },
   "animations": [
     {

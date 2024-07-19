@@ -5,7 +5,7 @@
   "startingAnimation": "danceLeft",
   "freeplayIcon": {
     "name": "gfpixel",
-    "offsets": [110, 25]
+    "offsets": [10]
   },
   "animations": [
     {

@@ -8,7 +8,7 @@
   "scale": 6,
   "freeplayIcon": {
     "name": "spiritpixel",
-    "offsets": [100, 20]
+    "offsets": [0, -5]
   },
   "animations": [
     {

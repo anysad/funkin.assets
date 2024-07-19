@@ -6,7 +6,7 @@
   "offsets": [20, 100],
   "freeplayIcon": {
     "name": "darnellpixel",
-    "offsets": [100, 10]
+    "offsets": [0, -15]
   },
   "animations": [
     {

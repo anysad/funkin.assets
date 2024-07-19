@@ -6,7 +6,7 @@
   "singTime": 8.0,
   "freeplayIcon": {
     "name": "gfpixel",
-    "offsets": [110, 25]
+    "offsets": [10]
   },
   "animations": [
     {

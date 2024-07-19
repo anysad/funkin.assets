@@ -4,7 +4,7 @@
   "assetPath": "characters/Monster_Assets",
   "freeplayIcon": {
     "name": "monsterpixel",
-    "offsets": [100, 10]
+    "offsets": [0, -15]
   },
   "animations": [
     {
