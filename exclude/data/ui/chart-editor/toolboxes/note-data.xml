@@ -3,7 +3,7 @@
 	<vbox width="100%" height="100%">
 		<grid id="toolboxNotesGrid" columns="2" width="100%">
 			<label text="Note Kind" verticalAlign="center" horizontalAlign="right" />
-			<dropdown id="toolboxNotesNoteKind" width="100%" value="" dropdownSize="10" dropdownWidth="300" searchable="true">
+			<dropdown id="toolboxNotesNoteKind" width="100%" value="" dropdownSize="10" searchable="true">
 				<data>
 					<item id="" text="Default" />
 					<item id="~CUSTOM~" text="Custom" />

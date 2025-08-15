@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<collapsible-dialog id="toolboxMetadata" title="Song Metadata" width="345" height="492">
+<collapsible-dialog id="toolboxMetadata" title="Song Metadata" width="340" height="492">
     <vbox width="100%" height="100%">
         <frame text="Variation: Default" width="100%" height="250" id="frameVariation">
             <vbox width="100%" height="100%">
-                <grid columns="2" height="100%">
+                <grid columns="2" height="100%" width="100%">
                     <label text="Song Name:" verticalAlign="center" horizontalAlign="right" />
-                    <textfield id="inputSongName" value="Bopeebo" tooltip="The readable name of the song." />
+                    <hbox width="100%">
+                        <textfield id="inputSongName" value="Bopeebo" width="100%" tooltip="The readable name of the song." />
+                    </hbox>
                     <label text="Song Artist:" verticalAlign="center" horizontalAlign="right" />
-                    <textfield id="inputSongArtist" value="Kawai Sprite" tooltip="The artist who composed the song." />
+                    <hbox width="100%">
+                        <textfield id="inputSongArtist" value="Kawai Sprite" width="100%" tooltip="The artist who composed the song." />
+                    </hbox>
                     <label text="Charter:" verticalAlign="center" horizontalAlign="right" />
-                    <textfield id="inputSongCharter" value="" tooltip="The person who charted the song. That's you!" />
+                    <hbox width="100%">
+                        <textfield id="inputSongCharter" value="" width="100%" tooltip="The person who charted the song. That's you!" />
+                    </hbox>
                     <label text="Stage:" verticalAlign="center" horizontalAlign="right" />
-                    <dropdown id="inputStage" value="Main Stage" width="100%" horizontalAlign="right" dropdownSize="10" dropdownWidth="300" searchable="true" tooltip="Which stage the level takes place on.">
+                    <dropdown id="inputStage" value="Main Stage" width="100%" horizontalAlign="right" dropdownSize="10" searchable="true" tooltip="Which stage the level takes place on.">
                         <data>
                             <item text="Main Stage" />
                             <item text="Spooky Mansion" />
@@ -27,7 +33,7 @@
                         </data>
                     </dropdown>
                     <label text="Note Style:" verticalAlign="center" horizontalAlign="right" />
-                    <dropdown id="inputNoteStyle" value="Normal" width="100%" horizontalAlign="right" dropdownSize="10" dropdownWidth="300" searchable="true" tooltip="Which graphical style of notes to use.">
+                    <dropdown id="inputNoteStyle" value="Normal" width="100%" horizontalAlign="right" dropdownSize="10" searchable="true" tooltip="Which graphical style of notes to use.">
                         <data>
                             <item text="Normal" />
                             <item text="Pixel" />
@@ -47,7 +53,7 @@
                 </hbox>
             </vbox>
         </frame>
-        <frame text="Difficulty: Normal" width="100%" height="170" id="frameDifficulty">
+        <frame text="Difficulty: Normal" width="100%" height="160" id="frameDifficulty">
             <grid columns="2">
                 <label text="Starting BPM" verticalAlign="center" />
                 <number-stepper id="inputBPM" pos="100" step="1" min="10" max="500" precision="1" horizontalAlign="right" tooltip="Adjust the BPM of the song, which helps align the grid and character animations to the music." />
@@ -66,12 +72,10 @@
                         <item id="15/16" text="15/16" />
                     </data>
                 </dropdown>
-                <label id="labelScrollSpeed" text="Scroll Speed: 1.0x" />
-                <spacer />
-                <slider id="inputScrollSpeed" pos="1.0" step="0.1" precision="1" min="0.5" max="5.0" tooltip="Adjust the relative speed at which the notes move." />
-                <spacer />
+                <label id="labelScrollSpeed" text="Scroll Speed: 1.0x" verticalAlign="center" />
+                <slider id="inputScrollSpeed" pos="1.0" step="0.1" precision="1" min="0.5" max="5.0" width="140%" horizontalAlign="right" tooltip="Adjust the relative speed at which the notes move." />
                 <label id="labelDifficultyRating" text="Difficulty Rank" verticalAlign="center" />
-                <number-stepper id="inputDifficultyRating" pos="0" step="1" min="0" max="15" tooltip="Set the rating for this difficulty as shown in the Freeplay menu." />
+                <number-stepper id="inputDifficultyRating" pos="0" step="1" min="0" max="15" horizontalAlign="right" tooltip="Set the rating for this difficulty as shown in the Freeplay menu." />
             </grid>
         </frame>
     </vbox>
