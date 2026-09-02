@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vbox width="100%" height="100%" id="propertiesContainer">
+  <LabeledRow text="Position">
+    <number-stepper pos="0.0" step="10.0" width="160" id="stageCharacterXPos" />
+    <number-stepper pos="0.0" step="10.0" width="160" id="stageCharacterYPos" />
+  </LabeledRow>
+  <LabeledRow text="Scale">
+    <number-stepper pos="1" step="0.05" width="160" id="stageCharacterScale" />
+  </LabeledRow>
+  <LabeledRow text="Z-Index">
+    <number-stepper id="stageCharacterZIndex" />
+  </LabeledRow>
+  <LabeledRow text="Scroll Factor">
+    <number-stepper pos="1" step="0.05" precision="2" width="160" id="stageCharacterXScrollFactor" />
+    <number-stepper pos="1" step="0.05" precision="2" width="160" id="stageCharacterYScrollFactor" />
+  </LabeledRow>
+  <LabeledRow text="Opacity">
+    <number-stepper pos="1" step="0.05" precision="2" width="160" id="stageCharacterOpacity" />
+  </LabeledRow>
+  <LabeledRow text="Angle">
+    <number-stepper pos="0" step="5" width="160" id="stageCharacterAngle" />
+  </LabeledRow>
+
+  <section-header text="Test as Character" horizontalAlign="center" />
+  <button id="stageCharacterSelection" width="70" height="70" padding="8" iconPosition="top" horizontalAlign="center" />
+</vbox>

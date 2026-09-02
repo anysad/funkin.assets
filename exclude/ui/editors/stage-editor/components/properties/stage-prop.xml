@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vbox width="100%" height="100%" id="propertiesContainer">
+  <LabeledRow text="Position">
+    <number-stepper pos="0.0" step="10.0" width="160" id="stageObjectXPos" />
+    <number-stepper pos="0.0" step="10.0" width="160" id="stageObjectYPos" />
+  </LabeledRow>
+  <LabeledRow text="Scale">
+    <number-stepper pos="1" step="0.05" width="160" id="stageObjectScale" />
+  </LabeledRow>
+  <LabeledRow text="Z-Index">
+    <number-stepper id="stageObjectZIndex" />
+  </LabeledRow>
+  <LabeledRow text="Camera Offset">
+    <number-stepper pos="0" step="5" width="160" id="stageObjectCameraXOffset" />
+    <number-stepper pos="0" step="5" width="160" id="stageObjectCameraYOffset" />
+  </LabeledRow>
+  <LabeledRow text="Scroll Factor">
+    <number-stepper pos="1" step="0.05" precision="2" width="160" id="stageObjectXScrollFactor" />
+    <number-stepper pos="1" step="0.05" precision="2" width="160" id="stageObjectYScrollFactor" />
+  </LabeledRow>
+  <LabeledRow text="Opacity">
+    <number-stepper pos="1" step="0.05" precision="2" width="160" id="stageObjectOpacity" />
+  </LabeledRow>
+  <LabeledRow text="Angle">
+    <number-stepper pos="0" step="5" width="160" id="stageObjectAngle" />
+  </LabeledRow>
+  <LabeledRow text="Dance Every">
+    <number-stepper pos="0" step="0.25" min="0" id="stageObjectDanceEvery"
+    tooltip="The frequency at which the character will play its idle animation, in beats.\nIncreasing this number will make the character dance less often." />
+  </LabeledRow>
+  <LabeledRow text="Blend Mode">
+    <dropdown id="inputObjectBlend" text="Select Mode" width="120%" selectedIndex="0">
+      <data>
+        <item text="NONE" />
+        <item text="ADD" />
+        <item text="DARKEN" />
+        <item text="DIFFERENCE" />
+        <item text="HARDLIGHT" />
+        <item text="INVERT" />
+        <item text="LIGHTEN" />
+        <item text="MULTIPLY" />
+        <item text="OVERLAY" />
+        <item text="SCREEN" />
+        <item text="SUBTRACT" />
+        <item text="COLORDODGE" />
+        <item text="COLORBURN" />
+        <item text="SOFTLIGHT" />
+        <item text="EXCLUSION" />
+        <item text="HUE" />
+        <item text="SATURATION" />
+        <item text="COLOR" />
+        <item text="LUMINOSITY" />
+      </data>
+    </dropdown>
+  </LabeledRow>
+
+  <!-- tint -->
+
+  <!-- checkboxes -->
+</vbox>
