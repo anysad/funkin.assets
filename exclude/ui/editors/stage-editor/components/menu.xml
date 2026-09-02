@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menubar id="menubar" width="100%" paddingLeft="256">
+<menubar id="menubar" width="100%" height="35" paddingLeft="256">
   <style>
     .menu {
     // The width of the individual menu items
@@ -29,14 +29,17 @@
     <menu-item id="menubarItemUndo" text="Undo" shortcutText="Ctrl+Z" />
     <menu-item id="menubarItemRedo" text="Redo" shortcutText="Ctrl+Y" />
     <menu-separator />
+    <menu-item id="menubarItemNewObject" text="New Object" />
+    <menu-item id="menubarItemFindObject" text="Find Object" shortcutText="Ctrl+F" />
     <menu-item id="menubarItemCopy" text="Copy Object" shortcutText="Ctrl+C" />
     <menu-item id="menubarItemCut" text="Cut Object" shortcutText="Ctrl+X" />
     <menu-item id="menubarItemPaste" text="Paste Object" shortcutText="Ctrl+V" />
+    <menu-item id="menubarItemFlipX" text="Flip Horizontally" shortcutText="Ctrl+H" />
+    <menu-item id="menubarItemFlipY" text="Flip Vertically" shortcutText="Ctrl+G" />
+    <menu-separator />
     <menu-item id="menubarItemDelete" text="Delete Object" shortcutText="Ctrl+Del" style="color: indianred" />
     <menu-separator />
-    <menu-item id="menubarItemNewObj" text="New Object" />
-    <menu-item id="menubarItemFindObj" text="Find Object" shortcutText="Ctrl+F" />
-    <menu-item id="menubarItemSelectNone" text="Select None" shortcutText="Ctrl+D" />
+    <menu-item id="menubarItemSelectNone" text="Select None" shortcutText="Ctrl + D" />
   </menu>
   <menu text="View" id="menubarMenuView">
     <menu text="Theme">
@@ -45,19 +48,17 @@
     </menu>
     <menu-separator />
     <vbox width="100%">
-    <menu-checkbox width="100%" id="menubarItemViewChars" text="View Characters" selected="true" tooltip="Show Characters." />
-    <menu-checkbox width="100%" id="menubarItemViewNameText" text="View Name Text" selected="true" tooltip="Show the Text above Cursor with the Name of an Asset directly below Cursor." />
-    <menu-checkbox width="100%" id="menubarItemViewFloorLines" text="View Floor Lines" tooltip="Show Lines that indicate the Floor of Characters." />
-    <menu-checkbox width="100%" id="menubarItemViewPosMarkers" text="View Position Markers" tooltip="Show Circles that show the Feet Position of Characters." />
-    <menu-checkbox width="100%" id="menubarItemViewCamBounds" text="View Camera Bounds" tooltip="Show Rectangles representing the Camera View upon being focused on a Character." />
+    <menu-checkbox width="100%" id="menubarItemCharacters" text="Characters" selected="true" />
+    <menu-checkbox width="100%" id="menubarItemObjectName" text="Hovered Object Name" selected="true" tooltip="Show the Text above Cursor with the Name of an Asset directly below Cursor." />
+    <menu-checkbox width="100%" id="menubarItemFloorLines" text="Floor Lines" tooltip="Show Lines that indicate the Floor of Characters." />
+    <menu-checkbox width="100%" id="menubarItemPositionMarkers" text="Position Markers" tooltip="Show Circles that show the Feet Position of Characters." />
+    <menu-checkbox width="100%" id="menubarItemCameraBounds" text="Camera Bounds" tooltip="Show Rectangles representing the Camera View upon being focused on a Character." />
     </vbox>
   </menu>
   <menu text="Windows" id="menubarMenuWindow">
     <vbox width="100%">
     <menu-checkbox width="100%" id="menubarItemWindowObjectGraphic" text="Object Graphic" />
-    <menu-checkbox width="100%" id="menubarItemWindowObjectAnims" text="Object Animations" />
-    <menu-checkbox width="100%" id="menubarItemWindowObjectProps" text="Object Properties" />
-    <menu-checkbox width="100%" id="menubarItemWindowCharacter" text="Character Properties" />
+    <menu-checkbox width="100%" id="menubarItemWindowObjectAnimations" text="Object Animations" />
     <menu-checkbox width="100%" id="menubarItemWindowStage" text="Stage Data Settings" />
     </vbox>
   </menu>
@@ -66,7 +67,10 @@
     <menu-item id="menubarItemGoToBackupsFolder" text="Go to Backups Folder" />
     <menu-item id="menubarItemAbout" text="About..." />
   </menu>
-  <button id="menubarButtonText" text="Test Stage" toggle="true" tooltip="Test the Stage inside the Editor." />
+  <hbox height="100%">
+    <label text="Test Stage" style="font-size: 12px; font-family: 'Inconsolata';" verticalAlign="center" />
+    <switch id="menubarSwitchTestStage" />
+  </hbox>
   <spacer width="100%" />
   <label text="PROTOTYPE Functionality is subject to change." verticalAlign="center" />
 </menubar>
