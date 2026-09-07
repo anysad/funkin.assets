@@ -67,10 +67,7 @@
     <menu-item id="menubarItemGoToBackupsFolder" text="Go to Backups Folder" />
     <menu-item id="menubarItemAbout" text="About..." />
   </menu>
-  <hbox height="100%">
-    <label text="Test Stage" style="font-size: 12px; font-family: 'Inconsolata';" verticalAlign="center" />
-    <switch id="menubarSwitchTestStage" />
-  </hbox>
+  <switch text="Test Stage" id="menubarSwitchTestStage" />
   <spacer width="100%" />
   <label text="PROTOTYPE Functionality is subject to change." verticalAlign="center" />
 </menubar>
